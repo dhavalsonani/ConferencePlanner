@@ -2,22 +2,17 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace BackEnd.Models
+namespace ConferenceDTO
 {
-    public class Speaker
+    public class Track
     {
         public int Id { get; set; }
 
         [Required]
         [StringLength(200)]
         public string Name { get; set; }
-
-        [StringLength(4000)]
-        public string Bio { get; set; }
-
-        [StringLength(1000)]
-        public virtual string WebSite { get; set; }
     }
 }
